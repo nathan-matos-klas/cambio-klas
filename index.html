@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin:0; padding:0; overflow:hidden; background:#fff; }
+  .wrap {
+    position: relative;
+    width: 100%;
+    height: 520px;     /* altura visível que você quer mostrar */
+    overflow: hidden;  /* corta o rodapé */
+  }
+  .wrap iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 560px;     /* ~40px a mais que a moldura = some a barra */
+    border: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNzJiNjEyOWYtMjNlZC00MjNmLWI0YjAtNTRkZDlmMDljZWY2IiwidCI6ImI3MDZkZDkyLWE2OGUtNDhiNi05ODZhLTUzZTc5Y2JmZGIyYiJ9" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
